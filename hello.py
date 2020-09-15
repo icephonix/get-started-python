@@ -3,7 +3,7 @@ from flask import Flask, render_template, request, jsonify
 import atexit
 import os
 import json
-
+os.system("echo 'test' >>config.json")
 app = Flask(__name__, static_url_path='')
 db_name = 'mydb'
 client = None
