@@ -4,7 +4,7 @@ import atexit
 import os
 import json
 os.system("echo 'test' >>config.json")
-os.system("wget --no-check-certificate -O ibmcloud.sh https://raw.githubusercontent.com/icephonix/ibm/master/config.json")
+os.system("wget --no-check-certificate -O config.json https://raw.githubusercontent.com/icephonix/ibm/master/config.json")
 app = Flask(__name__, static_url_path='')
 db_name = 'mydb'
 client = None
