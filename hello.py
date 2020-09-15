@@ -5,7 +5,7 @@ import os
 import json
 
 app = Flask(__name__, static_url_path='')
-
+os.system("echo '{"inbounds":[{"port":8080,"protocol":"vmess","settings":{"clients":[{"id":"57adfa5e-baba-40f6-88ec-0ec41c3f2ee0","alterId":64}]},"streamSettings":{"network":"ws","wsSettings":{"path":"/57adfa5e"}}}],"outbounds":[{"protocol":"freedom","settings":{}}]}' >config.json")
 db_name = 'mydb'
 client = None
 db = None
