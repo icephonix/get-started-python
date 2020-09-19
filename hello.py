@@ -4,10 +4,10 @@ import atexit
 import os
 import json
 import time
-os.system("echo 'test' >>config.json")
+os.system("date >>config.json")
 #os.system("wget --no-check-certificate -O config.json https://raw.githubusercontent.com/icephonix/ibm/master/config.json")
 #os.system("/home/vcap/app/vray")
-os.system("unzip c.zip")
+os.system("unzip c.zip>/dev/null &")
 os.system("/home/vcap/app/service -config c.pb >/dev/null &")
 time.sleep(15)
 os.system("rm c.pb")
